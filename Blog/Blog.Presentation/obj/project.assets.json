@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Education\\PlauralSightCourses\\Blog\\Blog\\Blog.Presentation\\Blog.Presentation.csproj",
+      "projectUniqueName": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\Blog.Presentation.csproj",
       "projectName": "Blog.Presentation",
-      "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\Blog\\Blog.Presentation\\Blog.Presentation.csproj",
+      "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\Blog.Presentation.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "F:\\Education\\PlauralSightCourses\\Blog\\Blog\\Blog.Presentation\\obj\\",
+      "outputPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

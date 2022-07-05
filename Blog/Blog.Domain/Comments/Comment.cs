@@ -13,23 +13,14 @@ namespace Blog.Domain.Comments
 {
     public class Comment : IEntity
     {
-        [Key]
-        [Required]
         public int Id { get; set; }
-        [Required]
-        [StringLength(1000)]
         public string? Content { get; set; }
-        [Required]
         public DateTime CreatedAt { get; set; }
-        [Required]
         public DateTime UpdatedAt { get; set; }
-        [Required]
-        public int UserId { get; set; }
-        [Required]
+        
+        public string UserId { get; set; } = null!;
         public User? User { get; set; }
-        [Required]
         public int ArtichleId { get; set; }
-        [Required]
-        public Artichle? Artichle { get; set; }
+        public Artichle? Artichle { get; set; } = null!;
     }
 }

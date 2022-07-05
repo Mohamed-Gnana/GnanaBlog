@@ -12,14 +12,9 @@ namespace Blog.Domain.Categories
 {
     public class Category : IEntity
     {
-        [Key]
-        [Required]
         public int Id { get; set; }
-        [Required]
-        [StringLength(120)]
         public string CategoryName { get; set; } = null!;
-        [Required]
         public DateTime CreatedAt { get; set; }
-        public ICollection<Artichle>? Artichles { get; set; }
+        public ICollection<Artichle> Artichles { get; set; } = new List<Artichle>();
     }
 }

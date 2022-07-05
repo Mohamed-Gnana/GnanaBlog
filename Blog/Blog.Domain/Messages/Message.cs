@@ -12,19 +12,14 @@ namespace Blog.Domain.Messages
 {
     public class Message : IEntity
     {
-        [Key]
-        [Required]
         public int Id { get; set; }
-        [Required]
-        [StringLength(300)]
         public string? Content { get; set; }
-        [Required]
         public DateTime CreatedAt { get; set; }
-        [Required]
         public DateTime UpdatedAt { get; set; }
-        [Required]
-        public int UserId { get; set; }
-        [Required]
-        public User? User { get; set; }
+        public string SenderId { get; set; } = null!;
+        public User? Sender { get; set; }
+        public string RecieverId { get; set; } = null!;
+        public User? Reciever { get; set; }
+
     }
 }

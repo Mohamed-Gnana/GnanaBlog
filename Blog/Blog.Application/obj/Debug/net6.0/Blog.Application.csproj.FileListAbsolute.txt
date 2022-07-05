@@ -1,0 +1,5 @@
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\Blog.Application.csproj.AssemblyReference.cache
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\Blog.Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\Blog.Application.AssemblyInfoInputs.cache
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\Blog.Application.AssemblyInfo.cs
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\Blog.Application.csproj.CoreCompileInputs.cache
