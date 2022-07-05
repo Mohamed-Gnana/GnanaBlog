@@ -7,7 +7,7 @@ using Blog.Domain.Artichles;
 
 namespace Blog.Application.Categories.Query.GetCategoriesList
 {
-    public class CategoryListModel
+    public class CategoriesListModel
     {
         public int Id { get; set; }
         public string Name { get; set; } = null!;

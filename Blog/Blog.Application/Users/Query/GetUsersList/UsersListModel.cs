@@ -9,7 +9,7 @@ namespace Blog.Application.Users.Query.GetUsersList
 {
     public class UsersListModel
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string UserName { get; set; } = null!;
         public string Email { get; set; } = null!;
         public bool IsAdmin { get; set; }

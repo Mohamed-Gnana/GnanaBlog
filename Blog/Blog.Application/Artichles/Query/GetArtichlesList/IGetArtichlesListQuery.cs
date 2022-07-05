@@ -8,6 +8,6 @@ namespace Blog.Application.Artichles.Query.GetArtichlesList
 {
     public interface IGetArtichlesListQuery
     {
-        List<ArtichlesListModel> Execute();
+        async Task<List<ArtichlesListModel>> Execute();
     }
 }

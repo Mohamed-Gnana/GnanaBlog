@@ -1,8 +1,49 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using Blog.Application.Artichles.Query.GetArtichlesList
+@model List<ArtichlesListModel>
+@{
+    ViewData["Title"] = "Gnana Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<section id="PostCard">
+    <div class="container">
+        @foreach(var artichle in Model)
+        {
+            <div class="card" style="width: 100%;">
+            <div class="card-body">
+
+                <!--Avatar and name-->
+                <h5 class="card-title h5">
+                    <div id="avatar" class="d-inline-block px-2 h5">
+                        <img src="~/images/IMG_20200819_110131.jpg"/>
+                    </div>
+                    <div class="d-inline-block pb-2">
+                        @artichle.AuthorName
+                        <p class="h6">@artichle.CreatedAt</p> 
+                    </div>
+                </h5>
+                <!--End of Avatar and name-->
+
+                <!--Topic and Discription-->
+                <h6 class="card-subtitle mb-2 text-muted h3">@artichle.Title</h6>
+                <p class="card-text">
+                    @artichle.Content
+                </p>
+                <!--End of Topic and Discription-->
+
+                <!--Like and Comment Buttons-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="#" class="btn btn-dark border w-100">Like</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#" class="btn btn-dark border w-100">Comment</a>
+                    </div>
+                </div>
+                <!--End of Like and comment Buttons-->
+            </div>
+        </div>
+        }
+    </div>
+</section>
+

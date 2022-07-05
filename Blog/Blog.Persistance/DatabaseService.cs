@@ -19,10 +19,8 @@ namespace Blog.Persistance
     public partial class DatabaseService : IdentityDbContext, IDatabaseService
     {
         private readonly string _connectionString = null!;
-        private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly UserManager<IdentityUser> _userManager;
         private readonly IDateService _dateService;
-        private readonly IPasswordHasher<IdentityUser> _passwordHasher;
+        private readonly IPasswordHasher<User> _passwordHasher;
 #nullable disable
         public DbSet<User> Users { get; set; }
         public DbSet<Artichle> Artichles { get; set; }
@@ -33,15 +31,11 @@ namespace Blog.Persistance
 
         public DatabaseService(
             DbContextOptions options,
-            RoleManager<IdentityRole> roleManager,
-            UserManager<IdentityUser> userManager,
             IDateService dateService,
-            IPasswordHasher<IdentityUser> passwordHasher,
+            IPasswordHasher<User> passwordHasher,
             string connectionString = "Data Source=.;Database = GnanaBlog;Integrated Security=True;") : base(options)
         {
             _connectionString = connectionString;
-            _roleManager = roleManager;
-            _userManager = userManager;
             _dateService = dateService;
             _passwordHasher = passwordHasher;
         }

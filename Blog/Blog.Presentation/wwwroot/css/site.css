@@ -16,3 +16,14 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+
+#PostCard .container {
+    max-width: 900px !important;
+}
+
+#avatar img {
+    width: 100%;
+    height: 85px;
+}

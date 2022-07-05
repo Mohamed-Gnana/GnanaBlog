@@ -47,11 +47,17 @@ namespace Blog.Persistance.Messages
 
             builder
                 .HasOne(message => message.Sender)
-                .WithMany(sender => sender.Messages);
+                .WithMany(sender => sender.SentMessages)
+                .HasForeignKey(message => message.SenderId)
+                .HasPrincipalKey(sender => sender.Id)
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder
                 .HasOne(message => message.Reciever)
-                .WithMany(reciever => reciever.Messages);
+                .WithMany(reciever => reciever.RecievedMessages)
+                .HasForeignKey(message => message.RecieverId)
+                .HasPrincipalKey(receiver => receiver.Id)
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder
                 .HasData(

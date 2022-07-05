@@ -42,9 +42,8 @@ namespace Blog.Persistance.Categories
                 .Property(category => category.CreatedAt)
                 .IsRequired();
 
-            builder
-                .HasMany(category => category.Artichles)
-                .WithMany(artichle => artichle.Categories);
+
+
 
         }
     }

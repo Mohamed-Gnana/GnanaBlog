@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Blog.Application.Categories.Query.GetCategoriesList
 {
-    public interface IGetCategoryListQuery
+    public interface IGetCategoriesListQuery
     {
-        List<CategoryListModel> Execute();
+        List<CategoriesListModel> Execute();
     }
 }

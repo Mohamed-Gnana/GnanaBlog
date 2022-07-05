@@ -27,6 +27,7 @@ namespace Blog.Persistance
         protected override void OnConfiguring(
             DbContextOptionsBuilder optionsBuilder)
         {
+            base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer(_connectionString);
         }
 
@@ -34,9 +35,9 @@ namespace Blog.Persistance
         {
             base.OnModelCreating(builder);
 
+            builder.ApplyConfiguration(new UserConfiguration(_dateService, _passwordHasher));
             builder.ApplyConfiguration(new ArtichleConfiguration(_dateService));
             builder.ApplyConfiguration(new CategoryConfiguration(_dateService));
-            builder.ApplyConfiguration(new UserConfiguration(_dateService, _passwordHasher));
             builder.ApplyConfiguration(new CommentConfiguration(_dateService));
             builder.ApplyConfiguration(new MessageConfiguration(_dateService));
             

@@ -14,11 +14,11 @@ namespace Blog.Persistance.Users
     public class UserConfiguration : IEntityTypeConfiguration<User>
     {
         private readonly IDateService _dateService;
-        private readonly IPasswordHasher<IdentityUser> _passwordHasher;
+        private readonly IPasswordHasher<User> _passwordHasher;
 
         public UserConfiguration(
             IDateService dateService,
-            IPasswordHasher<IdentityUser> passwordHasher)
+            IPasswordHasher<User> passwordHasher)
         {
             _dateService = dateService;
             _passwordHasher = passwordHasher;
@@ -26,9 +26,6 @@ namespace Blog.Persistance.Users
 
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder
-                .HasKey(user => user.Id);
-
             builder
                 .Property(user => user.FirstName)
                 .IsRequired()
@@ -43,14 +40,6 @@ namespace Blog.Persistance.Users
                 .Property(user => user.Email)
                 .IsRequired();
 
-            builder
-                .HasMany(user => user.Artichles)
-                .WithOne(artichle => artichle.Author);
-
-
-            builder
-                .HasMany(user => user.Comments)
-                .WithOne(comment => comment.User);
 
             User admin = new User()
             {
@@ -58,10 +47,13 @@ namespace Blog.Persistance.Users
                 FirstName = "Moahmed",
                 LastName = "Gnana",
                 Email = "mohamedgnana@gnana.com",
+                NormalizedEmail = "mohamedgnana@gnana.com",
+                NormalizedUserName = "mohamedgnana@gnana.com",
                 AvatarImagePath = "~/wwwroot/images/noavatar.jpeg",
                 EmailConfirmed = true,
                 IsAdmin = true
             };
+            admin.UserName = admin.FirstName + admin.LastName;
             admin.PasswordHash = _passwordHasher.HashPassword(admin, "Pa$$w0rd");
 
             User luckyUser = new User()
@@ -70,10 +62,13 @@ namespace Blog.Persistance.Users
                 FirstName = "Ahmed",
                 LastName = "Gnana",
                 Email = "ahmedgnana@gnana.com",
+                NormalizedEmail = "ahmedgnana@gnana.com",
+                NormalizedUserName = "ahmedgnana@gnana.com",
                 AvatarImagePath = "~/wwwroot/images/noavatar.jpeg",
                 EmailConfirmed = true,
                 IsAdmin = true
             };
+            luckyUser.UserName = luckyUser.FirstName + luckyUser.LastName;
             luckyUser.PasswordHash = _passwordHasher.HashPassword(luckyUser, "Pa$$w0rd");
 
             builder

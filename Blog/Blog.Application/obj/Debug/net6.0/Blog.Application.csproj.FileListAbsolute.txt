@@ -3,3 +3,15 @@ F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\
 F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\Blog.Application.AssemblyInfoInputs.cache
 F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\Blog.Application.AssemblyInfo.cs
 F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\Blog.Application.csproj.CoreCompileInputs.cache
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\bin\Debug\net6.0\Blog.Application.deps.json
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\bin\Debug\net6.0\Blog.Application.dll
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\bin\Debug\net6.0\Blog.Application.pdb
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\bin\Debug\net6.0\Blog.Common.dll
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\bin\Debug\net6.0\Blog.Domain.dll
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\bin\Debug\net6.0\Blog.Common.pdb
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\bin\Debug\net6.0\Blog.Domain.pdb
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\Blog.Application.csproj.CopyComplete
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\Blog.Application.dll
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\refint\Blog.Application.dll
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\Blog.Application.pdb
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Application\obj\Debug\net6.0\ref\Blog.Application.dll

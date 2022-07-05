@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Blog.Domain.Artichles;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Blog.Common.Date;
 
 namespace Blog.Persistance.Artichles
 {
     public class ArtichleConfiguration : IEntityTypeConfiguration<Artichle>
     {
+        private readonly IDateService _dateService;
+
+        public ArtichleConfiguration(IDateService dateService)
+        {
+            _dateService = dateService;
+        }
         public void Configure(EntityTypeBuilder<Artichle> builder)
         {
 
@@ -18,15 +25,18 @@ namespace Blog.Persistance.Artichles
                 .HasKey(artichle => artichle.Id);
 
             builder
-               .HasMany(artichle => artichle.Categories)
-               .WithMany(category => category.Artichles)
-               .UsingEntity(e => e.HasData(
-                   new { ArtichlesArtichleId = 1, CategoriesCategoryId = 1 }
-                   ));
+               .HasMany(artichle => artichle.Comments)
+               .WithOne(comment => comment.Artichle)
+               .OnDelete(DeleteBehavior.Cascade);
 
             builder
-               .HasMany(artichle => artichle.Comments)
-               .WithOne(comment => comment.Artichle);
+                .HasOne(artichle => artichle.Author)
+                .WithMany(author => author.Artichles)
+                .HasForeignKey(artichle => artichle.AuthorId);
+
+            builder
+                .HasMany(artichle => artichle.Categories)
+                .WithMany(category => category.Artichles);
 
             builder
                 .Property(artichle => artichle.Title)
@@ -49,6 +59,26 @@ namespace Blog.Persistance.Artichles
             builder
                 .Property(artichle => artichle.UpdatedAt)
                 .IsRequired();
+
+            builder
+                .HasData(
+                new Artichle()
+                {
+                    Id = 1,
+                    Title = "Hello World",
+                    Content = "Hi everyone, this is my first post in my blog",
+                    CreatedAt = _dateService.GetDateTime(),
+                    UpdatedAt = _dateService.GetDateTime(),
+                    AuthorId = "1"
+                }
+                );
+
+            builder
+              .HasMany(artichle => artichle.Categories)
+              .WithMany(category => category.Artichles)
+              .UsingEntity(e => e.HasData(
+                  new { ArtichlesId = 1, CategoriesId = 1 }
+                  ));
         }
     }
 }

@@ -17,9 +17,9 @@ namespace Blog.Domain.Messages
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public string SenderId { get; set; } = null!;
-        public User? Sender { get; set; }
+        public User Sender { get; set; } = null!;
         public string RecieverId { get; set; } = null!;
-        public User? Reciever { get; set; }
+        public User Reciever { get; set; } = null!;
 
     }
 }

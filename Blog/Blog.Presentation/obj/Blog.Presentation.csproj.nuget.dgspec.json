@@ -4,14 +4,81 @@
     "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\Blog.Presentation.csproj": {}
   },
   "projects": {
-    "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\Blog.Presentation.csproj": {
+    "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Application\\Blog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\Blog.Presentation.csproj",
-        "projectName": "Blog.Presentation",
-        "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\Blog.Presentation.csproj",
+        "projectUniqueName": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Application\\Blog.Application.csproj",
+        "projectName": "Blog.Application",
+        "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Application\\Blog.Application.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\obj\\",
+        "outputPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Common\\Blog.Common.csproj": {
+                "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Common\\Blog.Common.csproj"
+              },
+              "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Domain\\Blog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Common\\Blog.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Common\\Blog.Common.csproj",
+        "projectName": "Blog.Common",
+        "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Common\\Blog.Common.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +106,232 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Domain\\Blog.Domain.csproj",
+        "projectName": "Blog.Domain",
+        "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Domain\\Blog.Domain.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Persistance\\Blog.Persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Persistance\\Blog.Persistance.csproj",
+        "projectName": "Blog.Persistance",
+        "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Persistance\\Blog.Persistance.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Application\\Blog.Application.csproj": {
+                "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Application\\Blog.Application.csproj"
+              },
+              "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Domain\\Blog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\Blog.Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\Blog.Presentation.csproj",
+        "projectName": "Blog.Presentation",
+        "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\Blog.Presentation.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Presentation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Application\\Blog.Application.csproj": {
+                "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Application\\Blog.Application.csproj"
+              },
+              "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Common\\Blog.Common.csproj": {
+                "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Common\\Blog.Common.csproj"
+              },
+              "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Domain\\Blog.Domain.csproj": {
+                "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Domain\\Blog.Domain.csproj"
+              },
+              "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Persistance\\Blog.Persistance.csproj": {
+                "projectPath": "F:\\Education\\PlauralSightCourses\\Blog\\GnanaBlog\\Blog\\Blog.Persistance\\Blog.Persistance.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -8,18 +8,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Blog.Application.Artichles.Query.GetArtichlesList
 {
-    public class GetArtichleListQuery : IGetArtichlesListQuery
+    public class GetArtichlesListQuery : IGetArtichlesListQuery
     {
         private readonly IDatabaseService _databaseService;
 
-        public GetArtichleListQuery(IDatabaseService databaseService)
+        public GetArtichlesListQuery(IDatabaseService databaseService)
         {
             _databaseService = databaseService;
         }
 
-        public List<ArtichlesListModel> Execute()
+        public async Task<List<ArtichlesListModel>> Execute()
         {
-            var artichles = _databaseService.Artichles
+            var artichles = await _databaseService.Artichles
                 .Include(artichle => artichle.Comments)
                 .Include(artichle => artichle.Categories)
                 .Include(artichle => artichle.Author)
@@ -36,9 +36,10 @@ namespace Blog.Application.Artichles.Query.GetArtichlesList
                     AuthorAvatarImagePath = artichle.Author.AvatarImagePath,
                     Comments = artichle.Comments,
                     Categories = artichle.Categories
-                });
+                })
+                .ToListAsync();
 
-            return artichles.ToList();
+            return artichles;
 
         }
     }

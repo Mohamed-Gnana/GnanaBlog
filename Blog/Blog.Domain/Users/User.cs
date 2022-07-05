@@ -24,6 +24,7 @@ namespace Blog.Domain.Users
         public string? AvatarImagePath { get; set; }
         public ICollection<Artichle> Artichles { get; set; } = new List<Artichle>();
         public ICollection<Comment> Comments { get; set; } = new List<Comment>();
-        public ICollection<Message> Messages { get; set; } = new List<Message>();
+        public ICollection<Message> SentMessages { get; set; } = new List<Message>();
+        public ICollection<Message> RecievedMessages { get; set; } = new List<Message>();
     }
 }

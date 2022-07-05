@@ -1,0 +1,12 @@
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\bin\Debug\net6.0\Blog.Domain.deps.json
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\bin\Debug\net6.0\Blog.Domain.dll
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\bin\Debug\net6.0\Blog.Domain.pdb
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\obj\Debug\net6.0\Blog.Domain.csproj.AssemblyReference.cache
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\obj\Debug\net6.0\Blog.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\obj\Debug\net6.0\Blog.Domain.AssemblyInfoInputs.cache
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\obj\Debug\net6.0\Blog.Domain.AssemblyInfo.cs
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\obj\Debug\net6.0\Blog.Domain.csproj.CoreCompileInputs.cache
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\obj\Debug\net6.0\Blog.Domain.dll
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\obj\Debug\net6.0\refint\Blog.Domain.dll
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\obj\Debug\net6.0\Blog.Domain.pdb
+F:\Education\PlauralSightCourses\Blog\GnanaBlog\Blog\Blog.Domain\obj\Debug\net6.0\ref\Blog.Domain.dll

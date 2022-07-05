@@ -46,6 +46,12 @@ namespace Blog.Persistance.Comments
                 .IsRequired();
 
             builder
+                .HasOne(comment => comment.User)
+                .WithMany(user => user.Comments)
+                .OnDelete(DeleteBehavior.NoAction);
+
+
+            builder
                 .HasData(
                     new Comment()
                     {
